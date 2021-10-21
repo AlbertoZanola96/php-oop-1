@@ -22,5 +22,46 @@ metodi d'istanza che abbiamo visto stamattina e create un file index.php in cui:
             $this->eta = $_eta;
         }
 
+
+        function setTitolo($_titolo)
+        {
+            $this->titolo = $_titolo;
+        }
+        function getTitolo()
+        {
+           return $this->titolo;
+        }
+
+
+        function setPubblicazione($_pubblicazione)
+        {
+            $this->pubblicazione = $_pubblicazione;
+        }
+        function getPubblicazione()
+        {
+           return $this->pubblicazione;
+        }
+
+
+        function setDurata($_durata)
+        {
+            $this->durata = $_durata;   
+        }
+        function getDurata()
+        {
+           return $this->durata; 
+        }
+
+
+        function setEta($_eta)
+        {
+            $this->eta = $_eta; 
+        }
+        function getEta()
+        {
+           return $this->eta; 
+        }
+
+
     }
 ?>
