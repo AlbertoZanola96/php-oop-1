@@ -61,11 +61,25 @@ metodi d'istanza che abbiamo visto stamattina e create un file index.php in cui:
         {
            return $this->eta; 
         }
+
+
+        function getInfo() {
+            $info = $this->titolo. '<br/>'. $this->pubblicazione. '<br/>'. $this->durata. '<br/>'. $this->eta. '<br/>';
+            return $info;
+
+        }
     }
 
     $movieOne = new Movie('La maledizione della prima luna', '27 agosto 2003', '2h 23m', 7);
     var_dump($movieOne);
 
-    $movieTWo = new Movie('harry potter e la pietra filosofale', '06 dicembre 2001', '2h 32m', 10);
+    $movieTwo = new Movie('harry potter e la pietra filosofale', '06 dicembre 2001', '2h 32m', 10);
     var_dump($movieTWo);
+
+    //visualizzazione dei metodi
+    var_dump(get_class_methods($movieOne));
+
+    echo $movieOne->getInfo();
+    echo $movieTwo->getInfo();
+
 ?>
