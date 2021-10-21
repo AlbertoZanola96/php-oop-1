@@ -61,7 +61,11 @@ metodi d'istanza che abbiamo visto stamattina e create un file index.php in cui:
         {
            return $this->eta; 
         }
-
-
     }
+
+    $movieOne = new Movie('La maledizione della prima luna', '27 agosto 2003', '2h 23m', 7);
+    var_dump($movieOne);
+
+    $movieTWo = new Movie('harry potter e la pietra filosofale', '06 dicembre 2001', '2h 32m', 10);
+    var_dump($movieTWo);
 ?>
